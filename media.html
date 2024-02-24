@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Web Page(Media Query)</title>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Remove horizontal scrollbar */
+    }
+
+    header {
+      background-color: #566573;
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #333;
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0;
+      padding: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    section {
+      box-sizing: border-box;
+      overflow: hidden; /* Hide vertical scrollbar */
+    }
+
+    main {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    sidebar {
+      width: 25%;
+      max-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      text-align: left;
+      overflow-y: auto; /* Add vertical scrollbar if needed */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    p {
+      color: black;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    hr {
+      margin-top: 30px;
+      border: 1px solid #566573;
+    }
+
+    h2, h3 {
+      font-family: 'Algerian';
+      margin-bottom: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    .ai-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .ai-container > div {
+      width: 48%;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav li {
+        padding: 10px;
+      }
+
+      main {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .ai-container > div {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Artificial Intelligence</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#types">Types of AI</a></li>
+      <li><a href="#applications">Applications</a></li>
+    </ul>
+  </nav>
+
+  <section>
+
+    <main>
+      <img src="AI.webp" alt="AI Image">
+      <p>Artificial Intelligence (AI) refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, understanding natural language, speech recognition, and visual perception. AI aims to create machines that can mimic cognitive functions and adapt to new information, allowing them to perform tasks without explicit programming.</p>
+      
+      <hr>
+
+      <h2 id="types">Types of AI</h2>
+
+      <div class="ai-container">
+        <div>
+          <h3>Narrow AI</h3>
+          <ul>
+            <!-- Narrow AI content -->
+            <li>1) Specific Task Focus: Designed to excel in a specific task or a narrow set of tasks.</li>
+            <li>2) Limited Domain Expertise: Demonstrates expertise within a specific domain.</li>
+            <li>3) Examples: Virtual personal assistants, recommendation systems, chatbots, autonomous vehicles.</li>
+            <li>4) No Consciousness or Self-Awareness: Lacks consciousness and self-awareness.</li>
+            <li>5) Practical Applications: Widely used in data analysis, language translation, image recognition, and automation.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>General AI</h3>
+          <ul>
+            <!-- General AI content -->
+            <li>1) Human-Like Cognitive Abilities: Aims to mimic the broad cognitive abilities of humans.</li>
+            <li>2) Adaptability and Learning: Possesses adaptability and learning capabilities.</li>
+            <li>3) Examples: Theoretical concept; not implemented in practical applications yet.</li>
+            <li>4) Consciousness and Self-Awareness: Theoretically has consciousness and self-awareness.</li>
+            <li>5) Complex Problem Solving: Capable of tackling complex problem-solving tasks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2 id="applications">Applications</h2>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <!-- Healthcare and Finance sections -->
+        <div style="width: 48%; text-align: left;">
+          <h3 style="font-size: 25px;">Healthcare</h3>
+          <img src="hea.webp" alt="Healthcare Image" style="width: 100%; height: 300px; border-radius: 10px; margin-bottom: 10px;">
+          <ul style="list-style-type: none; padding: 0;font-size: 17px;">
+            <li><strong>Diagnosis and Treatment:</strong> AI aids in medical imaging analysis for early disease detection.</li>
+            <li><strong>Drug Discovery:</strong> AI accelerates drug development by analyzing large datasets.</li>
+            <li><strong>Personalized Medicine:</strong> AI tailors treatment plans based on individual patient data.</li>
+          </ul>
+        </div>
+
+        <div style="width: 48%; text-align: left;">
+          <h3 style="font-size: 25px;">Finance</h3>
+          <img src="fi.jpg" alt="Finance Image" style="width: 100%; height: 300px; border-radius: 10px; margin-bottom: 10px;">
+          <ul style="list-style-type: none; padding: 0;font-size: 17px;">
+            <li><strong>Algorithmic Trading:</strong> AI analyzes market trends and executes high-speed trades.</li>
+            <li><strong>Fraud Detection:</strong> AI identifies unusual patterns in financial transactions.</li>
+            <li><strong>Customer Service:</strong> AI-powered chatbots provide personalized financial advice.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </section>
+</body>
+</html>
